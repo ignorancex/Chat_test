@@ -147,7 +147,7 @@ public class MainActivity extends BaseActivity implements ConversionListener {
     }
 
     private void signOut(){
-        showToast("Signing out...");
+        showToast("登出...");
         FirebaseFirestore database=FirebaseFirestore.getInstance();
         DocumentReference documentReference=
                 database.collection(Constants.KEY_COLLECTION_USERS).document(
@@ -161,7 +161,7 @@ public class MainActivity extends BaseActivity implements ConversionListener {
                     startActivity(new Intent(getApplicationContext(), SignInActivity.class));
                     finish();
                 })
-                .addOnFailureListener(e->showToast("Unable to sign out"));
+                .addOnFailureListener(e->showToast("无法登出"));
     }
 
     @Override

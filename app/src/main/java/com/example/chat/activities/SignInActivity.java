@@ -63,7 +63,7 @@ public class SignInActivity extends AppCompatActivity {
                     }
                     else{
                         loading(false);
-                        showToast("Unable to sign in");
+                        showToast("无法登入");
                     }
                 });
     }
@@ -85,15 +85,15 @@ public class SignInActivity extends AppCompatActivity {
 
     private Boolean isValidSignInDetails(){
         if(binding.inputEmail.getText().toString().trim().isEmpty()){
-            showToast("Enter email");
+            showToast("输入邮箱");
             return false;
         }
         else if(!Patterns.EMAIL_ADDRESS.matcher(binding.inputEmail.getText().toString()).matches()){
-            showToast("Enter valid email");
+            showToast("输入正确的邮箱");
             return false;
         }
         else if(binding.inputPassword.getText().toString().trim().isEmpty()){
-            showToast("Enter password");
+            showToast("输入密码");
             return false;
         }
         else return true;

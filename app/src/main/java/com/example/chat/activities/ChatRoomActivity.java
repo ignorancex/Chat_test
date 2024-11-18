@@ -132,7 +132,7 @@ public class ChatRoomActivity extends BaseActivity {
                     }
                     chatRoomAdapter.notifyDataSetChanged();
                 });
-        binding.textName.setText("ChatRoom");
+        binding.textName.setText("聊天室");
     }
 
     private void listenMessages() {

@@ -119,31 +119,31 @@ public class SignUpActivity extends AppCompatActivity {
 
     private boolean isValidSignUpDetails(){
         if(encodedImage==null){
-            showToast("Select profile image");
+            showToast("选择头像");
             return false;
         }
         else if(binding.inputName.getText().toString().trim().isEmpty()){
-            showToast("Enter name");
+            showToast("输入名称");
             return false;
         }
         else if(binding.inputEmail.getText().toString().trim().isEmpty()){
-            showToast("Enter email");
+            showToast("输入邮箱");
             return false;
         }
         else if(!Patterns.EMAIL_ADDRESS.matcher(binding.inputEmail.getText().toString()).matches()){
-            showToast("Enter valid image");
+            showToast("选择可用的图片");
             return false;
         }
         else if(binding.inputPassword.getText().toString().trim().isEmpty()){
-            showToast("Enter password");
+            showToast("输入密码");
             return false;
         }
         else if(binding.inputConfirmPassword.getText().toString().trim().isEmpty()){
-            showToast("Confirm your password");
+            showToast("确认密码");
             return false;
         }
         else if(!binding.inputPassword.getText().toString().equals(binding.inputConfirmPassword.getText().toString())){
-            showToast("Password & confirm password must be same");
+            showToast("密码和确认密码必须相同");
             return false;
         }
         else return true;

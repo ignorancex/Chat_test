@@ -1,17 +1,17 @@
 <resources>
     <string name="app_name">Chat</string>
-    <string name="welcome_back">Welcome Back!</string>
-    <string name="login_to_continue">Login to continue</string>
-    <string name="email">Email</string>
-    <string name="password">Password</string>
-    <string name="sign_in">Sign In</string>
-    <string name="create_new_account">Create New Account</string>
-    <string name="add_image">Add Image</string>
-    <string name="name">Name</string>
-    <string name="confirm_password">Confirm Password</string>
-    <string name="sign_up">Sign Up</string>
-    <string name="select_user">Select User</string>
-    <string name="type_a_message">Type a message</string>
-    <string name="online">Online</string>
-    <string name="chatroom">Chatroom</string>
+    <string name="welcome_back">欢迎回来!</string>
+    <string name="login_to_continue">登入以继续</string>
+    <string name="email">邮箱</string>
+    <string name="password">密码</string>
+    <string name="sign_in">登入</string>
+    <string name="create_new_account">创建新账号</string>
+    <string name="add_image">添加图片</string>
+    <string name="name">名称</string>
+    <string name="confirm_password">确认密码</string>
+    <string name="sign_up">注册</string>
+    <string name="select_user">选择用户</string>
+    <string name="type_a_message">输入信息</string>
+    <string name="online">在线</string>
+    <string name="chatroom">聊天室</string>
 </resources>
